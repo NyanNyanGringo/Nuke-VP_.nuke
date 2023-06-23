@@ -25,9 +25,9 @@
                 - /custom_gizmos.py  # модуль, который импортирует гизмы из /.nuke/Gizmos
                 - /custom_guides.py  # кастомные форматы
                 - /set_nuke_hot_keys.py  # кастомизация дополнительных хоткеев,
-                                                                 # основные заводим через VP Lord of Nodes
+                                         # основные заводим через VP Lord of Nodes
                 - /set_nuke_knobs_default.py # кастомизация дополнительных дефолтных кнобов,
-                                                                         # основные заводим через VP Lord of Nodes
+                                             # основные заводим через VP Lord of Nodes
                 - /set_nuke_plugin_paths.py  # импорт модулей из /.nuke/Python
         - /init.py  # импортируем /.nuke/PythonConstruct/set_nuke_plugin_paths.py
         - /menu.py  # импортируем остальное из папки /.nuke/PythonConstruct
