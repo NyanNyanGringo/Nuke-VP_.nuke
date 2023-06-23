@@ -1,0 +1,1 @@
+start C:\Progra~1\Nuke13.1v5\Nuke13.1.exe --studio -i -t
