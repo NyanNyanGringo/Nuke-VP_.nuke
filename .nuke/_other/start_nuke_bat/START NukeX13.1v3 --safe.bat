@@ -1,0 +1,1 @@
+start C:\Progra~1\Nuke13.1v3\Nuke13.1.exe --nukex --safe

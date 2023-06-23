@@ -1,0 +1,1 @@
+start C:\Progra~1\Nuke12.2v8\Nuke12.2.exe --nukex --safe

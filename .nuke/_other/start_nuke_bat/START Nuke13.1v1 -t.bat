@@ -1,0 +1,1 @@
+start C:\Progra~1\Nuke13.1v1\Nuke13.1.exe --x -t
