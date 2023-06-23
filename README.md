@@ -31,4 +31,3 @@
                 - /set_nuke_plugin_paths.py  # импорт модулей из /.nuke/Python
         - /init.py  # импортируем /.nuke/PythonConstruct/set_nuke_plugin_paths.py
         - /menu.py  # импортируем остальное из папки /.nuke/PythonConstruct
-    ```
