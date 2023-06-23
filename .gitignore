@@ -1,3 +1,6 @@
 .git
 .idea
 test
+/.nuke/uistate.ini
+/.nuke/FileChooser_Favorites.pref
+/.nuke/preferences13.1.nk

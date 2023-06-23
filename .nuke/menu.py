@@ -1,7 +1,8 @@
 import set_nuke_knobs_default
 import set_nuke_hot_keys
 
-import custom_guides
-import custom_callbacks
 import custom_autolabel
+import custom_callbacks
+import custom_favorite
 import custom_gizmos
+import custom_guides
