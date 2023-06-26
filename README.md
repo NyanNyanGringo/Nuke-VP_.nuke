@@ -11,9 +11,9 @@
 ```python
 - /.nuke
         - /_other
-                    - /icons  # папка для иконок
-                    - /start_nuke_bat  # папка для .bat файлов (запуск Nuke в safe и terminal)
-                    - /set_nuke_reg  # установить для Windows дефолтный запуск Nuke через .reg
+                - /icons  # папка для иконок
+                - /start_nuke_bat  # папка для .bat файлов (запуск Nuke в safe и terminal)
+                - /set_nuke_reg  # установить для Windows дефолтный запуск Nuke через .reg
         - /Gizmos  # папка с гизмами (может включать подпапки)
         - /Python  # папка с плагинами
                 - /3DE4  # папка для импорта линз 3DEqualizer4 в Nuke
