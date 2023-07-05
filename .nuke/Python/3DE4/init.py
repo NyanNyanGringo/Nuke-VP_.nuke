@@ -19,11 +19,18 @@ How to install module:
 
 """
 
+
 import nuke
 import os
 
 
-# add folder with 3DE4 lens to plugin path
+# USERCONFIG
+
+
+nuke_3de4_menu_name = "3DE4"
+
+
+# funcs
 
 def get_operating_system():
     if nuke.env["WIN32"]:
@@ -34,11 +41,19 @@ def get_operating_system():
         return "linux"
 
 
-path = "./{operating_system}/Nuke{major}.{minor}".format(
+# vars
+
+this_path = os.path.dirname(os.path.abspath(__file__))
+relative_plugin_path = "./{operating_system}/Nuke{major}.{minor}".format(
     operating_system=get_operating_system(),
     major=str(nuke.NUKE_VERSION_MAJOR),
     minor=str(nuke.NUKE_VERSION_MINOR))
-nuke.pluginAddPath(path)
+full_plugin_path = os.path.join(this_path, relative_plugin_path).replace("\\", "/")
+
+
+# add folder with 3DE4 lens to plugin path
+
+nuke.pluginAddPath(full_plugin_path)
 
 
 # delete .zip, .tgz files from 3DE4 folder if exists
@@ -63,5 +78,13 @@ def delete_files_with_extensions_from_path(path, extensions):
                 os.remove(filepath)
 
 
-this_path = os.path.dirname(os.path.abspath(__file__))
 delete_files_with_extensions_from_path(path=this_path, extensions=["zip", "tgz"])
+
+
+# import lens to Nuke menu in GUI mode
+
+
+if nuke.env["gui"]:
+    for plugin in os.listdir(full_plugin_path):
+        plugin = "".join(plugin.split(".")[:-1])  # delete extenstion
+        nuke.menu("Nodes").addCommand(nuke_3de4_menu_name + "/" + plugin, "nuke.createNode('" + plugin + "')")
