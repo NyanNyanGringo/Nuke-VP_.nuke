@@ -25,10 +25,10 @@ path_icons = path_nuke + "/_other/icons"
 
 
 # clear FileChooser_Favorites.pref
-FileChooser_Favorites = path_nuke + "/FileChooser_Favorites.pref"
-if os.path.isfile(FileChooser_Favorites):
-    file = open(FileChooser_Favorites, 'w')
-    file.close()
+# FileChooser_Favorites = path_nuke + "/FileChooser_Favorites.pref"
+# if os.path.isfile(FileChooser_Favorites):
+#     file = open(FileChooser_Favorites, 'w')
+#     file.close()
 
 
 # USER CONFIG: add favorite directories
