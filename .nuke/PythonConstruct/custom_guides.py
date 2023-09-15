@@ -29,13 +29,3 @@ viewer_masks = [
   guides.MaskGuide("2.35:1", 2.35),
   guides.MaskGuide("2048x858", 2048/858),  # example how to add custom mask guide
 ]
-
-
-# ROOT
-
-
-nuke.addFormat("2048 858 1.0 Scope2048")  # example hot to add custom format to Root
-nuke.knobDefault("Root.format", "Scope2048")  # example hot to set default format to Root
-
-nuke.knobDefault("Root.first_frame", "1")  # example hot to set default Root frame range
-nuke.knobDefault("Root.last_frame", "100")
