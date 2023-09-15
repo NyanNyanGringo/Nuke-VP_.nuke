@@ -5,18 +5,16 @@ version of Nuke and operating system.
 
 How to install module:
 1. Add 3DE4 folder to your .nuke directory, like: "/.nuke/3DE4"
-
 2. In "/.nuke/init.py" file add next commands:
-
 > import nuke
 > nuke.pluginAddPath("./3DE4")
 
-3. If you want to update lenses:
 
+How to update 3DE4 plugins?
 - Got to: https://www.3dequalizer.com/?site=tech_docs&id=110216_01
 - Download archieve "Lens Distortion Plugin Kit"
-- From archieve "/compiled/nuke/..." copy [linux, osx, windows] folders to "/.nuke/3DE4/..." with replacement
-
+- From archieve "/compiled/nuke/..." copy [linux, osx, windows] folders to
+    "/.nuke/3DE4/..." with replacement
 """
 
 
