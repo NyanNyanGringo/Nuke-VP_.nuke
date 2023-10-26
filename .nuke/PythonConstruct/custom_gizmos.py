@@ -37,12 +37,13 @@ for root, dirs, files in os.walk(gizmos_path):
 
     nuke.pluginAddPath(path_to_menu)
 
-    for file in files:
-        if ".gizmo" in file:
-            command_name = menu_name + "/" + file.replace(".gizmo", "")
-            nuke.menu("Nodes").addCommand(command_name, "nuke.createNode('" + file + "')")
+    if nuke.env["gui"]:
+        for file in files:
+            if ".gizmo" in file:
+                command_name = menu_name + "/" + file.replace(".gizmo", "")
+                nuke.menu("Nodes").addCommand(command_name, "nuke.createNode('" + file + "')")
 
-        elif ".nk" in file and os.path.basename(path_to_menu).lower() != 'toolsets':
-            toolset_path = path_to_menu + "/" + file
-            command_name = menu_name + "/" + file
-            nuke.menu("Nodes").addCommand(command_name, "nuke.loadToolset('" + toolset_path + "')")
+            elif ".nk" in file and os.path.basename(path_to_menu).lower() != 'toolsets':
+                toolset_path = path_to_menu + "/" + file
+                command_name = menu_name + "/" + file
+                nuke.menu("Nodes").addCommand(command_name, "nuke.loadToolset('" + toolset_path + "')")
