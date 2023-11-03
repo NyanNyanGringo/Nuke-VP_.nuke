@@ -75,7 +75,7 @@ elif nuke.env["LINUX"]:
     LINUX_AUTO_ADD_DIRS = []
 
 
-# USER CONFIG: automatically add favorite directories
+# USER CONFIG: automatically add favorite directories from path
 if nuke.env["WIN32"]:
     dirs_to_add_files_from = []
     [auto_add_path_to_favourite(path) for path in dirs_to_add_files_from]
