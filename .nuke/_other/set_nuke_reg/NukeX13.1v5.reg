@@ -14,3 +14,8 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\nuke.nuke\shell\opennuke\command]
 @="\"C:\\Program Files\\Nuke13.1v5\\Nuke13.1.exe\" \"--nukex\" \"%1\""
+
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.nk\UserChoice]
+
+[HKEY_CLASSES_ROOT\.nk]
+@="NukeScript"
